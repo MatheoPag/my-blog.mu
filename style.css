@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Montserrat";
+    color :#000;
+}
+
+
+/* nav */
+body{
+    margin-bottom: 200px;
+}
+.nav-bar{
+    margin: 20px auto;
+    width: 94%;
+    padding: 15px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-size:  2.3em;
+}
+
+.nav-btn{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.nav-bar a{
+    font-size: 1.1em;
+}
+
+/* baniere */
+
+.baniere{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text1{
+    position:absolute; 
+    background-color: #4d4d4d57;  
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.text1 h1{
+    color: #fff;
+}
+
+.baniere img{
+    width: 100%;
+}
+
+.main{
+    width: 75%;
+    margin: 15px auto;
+    display: flex;
+    /* background-color: #000; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    width: 100%;
+    /* height: 250px; */
+}
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-img img {
+    transform: translateY(-3px);
+    background: #000;
+    width: 100%;
+    height: auto;
+}
+.sub-container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.source-info {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.source-info h3{
+    /* margin-right: 120px; */
+    line-height: 25px;
+}
+
+.light{
+    font-size: 1.05em;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.link{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+.link a img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.container-2{
+    margin-top: 50px;
+}
+.container-2 h2{
+    font-size: 1.5em;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+.blue{
+    font-size: 1.2em;
+    font-family: 'Hedvig Letters Serif', serif;
+    font-style: italic;
+    color: rgb(8, 88, 179);
+    text-decoration: underline;
+}
+
+.pub{
+    width: 80%  ;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 1.15em;
+}
+.post{
+    margin-top: 55px;
+}
+.post p{
+    font-family: 'Hedvig Letters Serif', serif;
+
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+.hashtag{
+    color: rgb(8, 88, 179);
+
+}
+
+/* ajouter une media query sur 1730 pour le titre et 1175px pour le reste */
+@media screen and (max-width: 1730px) and (min-width: 1500px) {
+    .container-2 h2{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 1499px){
+    .container-2 h2{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .logo h1{
+        font-size: 2em;
+    }
+    .nav-btn{
+        width: 50%;
+    }
+    .nav-btn a{
+        font-size: 1em;
+    }
+
+    .main{
+        width: 90%;
+    }
+    .text1 h1{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo h1{
+        font-size: 1.8em;
+    }
+    .nav-btn{
+        width: 65%;
+    }
+
+    .main{
+        width: 93%;
+    }
+    .text1 h1{
+        font-size: 1.1em;
+    }
+    .source-info h3{
+        font-size: 0.9em;
+    }
+    .sub-container{
+        width: 80%;
+    }
+    .link a img{
+        width: 35px;
+    }
+    .link{
+        width: 25%;
+    }
+    .source-info{
+        width: 70%;
+    }
+
+    .container-2 h2{
+        font-size: 1em;
+    }
+    .post p{
+        font-size: .8em;
+    }
+}
